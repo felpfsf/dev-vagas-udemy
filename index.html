@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <title>Dev Jobs</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">DEV Jobs</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Ver Vagas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary" href="add.html">Abrir Vaga</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner e Pesquisa -->
+    <div id="top-container" class="container-fluid">
+      <h1 id="main-title" class="text-center">
+        Encontre a vaga dos seus sonhos
+      </h1>
+      <h3 id="main-subtitle" class="text-center">
+        Somos o site com mais vagas em tecnologia no mercado, totalmente
+        direcionadas a home office
+      </h3>
+      <form id="search-form" class="form-inline" action="">
+        <div class="form-group col-md-10">
+          <input
+            id="job"
+            name="job"
+            class="form-control"
+            type="text"
+            placeholder="Digite a a palavra chave da vaga"
+          />
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-primary" type="submit">Buscar</button>
+        </div>
+      </form>
+    </div>
+    <!-- Main vagas -->
+    <main>
+      <div id="jobs-container" class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="job-list-title">Veja as nossas vagas em destaque</h2>
+            <ul id="job-list" class="list-group">
+              <li class="list-group-item new-job">
+                <img src="/public/img/company.svg" alt="company logo" />
+                <p>Empresa</p>
+                <h2>Título da vaga</h2>
+                <p>R$ 2.000,00</p>
+                <span class="new-job-label">Nova</span>
+                <a href="" class="btn btn-primary">Ver vaga</a>
+              </li>
+              <li class="list-group-item">
+                <img src="/public/img/company.svg" alt="company logo" />
+                <p>Empresa</p>
+                <h2>Título da vaga</h2>
+                <p>R$ 2.000,00</p>
+                <a href="" class="btn btn-primary">Ver vaga</a>
+              </li>
+              <li class="list-group-item">
+                <img src="/public/img/company.svg" alt="company logo" />
+                <p>Empresa</p>
+                <h2>Título da vaga</h2>
+                <p>R$ 2.000,00</p>
+                <a href="" class="btn btn-primary">Ver vaga</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
