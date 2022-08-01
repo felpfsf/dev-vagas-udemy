@@ -40,7 +40,6 @@ db.authenticate()
 
 // rotas
 app.get('/', (req, res) => {
-  
   let searchJob = req.query.job
   // Mesmo que o usuário digite a palavra incompleta o query tratará de
   // buscar os dados que contenham a palara, exemplo:
@@ -76,3 +75,5 @@ app.get('/', (req, res) => {
 
 // rota jobs
 app.use('/jobs', require('./routes/routes_job'))
+
+module.exports = app
